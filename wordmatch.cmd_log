@@ -1,0 +1,1 @@
+sch2verilog -intstyle ise -family virtex2p   -w "C:/Documents and Settings/student/lab3_1c/wordmatch.sch" wordmatch.vf

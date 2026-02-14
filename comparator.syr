@@ -1,0 +1,324 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Documents and Settings/student/lab3_1c/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/Documents and Settings/student/lab3_1c/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: comparator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "comparator.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "comparator"
+Output Format                      : NGC
+Target Device                      : xc2vp50-7-ff1152
+
+---- Source Options
+Top Module Name                    : comparator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Convert Tristates To Logic         : Yes
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : comparator.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "comparator.vf" in library work
+Module <AND7_MXILINX_comparator> compiled
+Module <comp8_MUSER_comparator> compiled
+Module <comparator> compiled
+No errors in compilation
+Analysis of file <"comparator.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <comparator> in library <work>.
+
+Analyzing hierarchy for module <comp8_MUSER_comparator> in library <work>.
+
+Analyzing hierarchy for module <AND7_MXILINX_comparator> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <comparator>.
+Module <comparator> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_20_0" for instance <XLXI_20> in unit <comparator>.
+Analyzing module <comp8_MUSER_comparator> in library <work>.
+Module <comp8_MUSER_comparator> is correct for synthesis.
+ 
+Analyzing module <AND7_MXILINX_comparator> in library <work>.
+Module <AND7_MXILINX_comparator> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_98> in unit <AND7_MXILINX_comparator>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_110> in unit <AND7_MXILINX_comparator>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <comp8_MUSER_comparator>.
+    Related source file is "comparator.vf".
+Unit <comp8_MUSER_comparator> synthesized.
+
+
+Synthesizing Unit <AND7_MXILINX_comparator>.
+    Related source file is "comparator.vf".
+Unit <AND7_MXILINX_comparator> synthesized.
+
+
+Synthesizing Unit <comparator>.
+    Related source file is "comparator.vf".
+Unit <comparator> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '2vp50.nph' in environment C:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <comparator> ...
+
+Optimizing unit <AND7_MXILINX_comparator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block comparator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : comparator.ngr
+Top Level Output File Name         : comparator
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 120
+
+Cell Usage :
+# BELS                             : 86
+#      AND2                        : 7
+#      AND4                        : 16
+#      OR2B1                       : 7
+#      XNOR2                       : 56
+# IO Buffers                       : 120
+#      IBUF                        : 119
+#      OBUF                        : 1
+# Others                           : 2
+#      FMAP                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp50ff1152-7 
+
+ Number of Slices:                        0  out of  23616     0%  
+ Number of IOs:                         120
+ Number of bonded IOBs:                 120  out of    692    17%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -7
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 7.441ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 119 / 1
+-------------------------------------------------------------------------
+Delay:               7.441ns (Levels of Logic = 9)
+  Source:            b<31> (PAD)
+  Destination:       match (PAD)
+
+  Data Path: b<31> to match
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.878   0.332  b_31_IBUF (b_31_IBUF)
+     XNOR2:I0->O           1   0.275   0.332  XLXI_4/I_36_34 (XLXI_4/AB7)
+     AND4:I0->O            1   0.275   0.332  XLXI_4/I_36_32 (XLXI_4/AB47)
+     AND2:I0->O            1   0.275   0.332  XLXI_4/I_36_50 (XLXN_5)
+     OR2B1:I1->O           1   0.275   0.332  XLXI_13 (XLXN_47)
+     begin scope: 'XLXI_20'
+     AND4:I0->O            1   0.275   0.332  I_36_69 (I36)
+     AND4:I3->O            1   0.275   0.332  I_36_85 (O)
+     end scope: 'XLXI_20'
+     OBUF:I->O                 2.592          match_OBUF (match)
+    ----------------------------------------
+    Total                      7.441ns (5.120ns logic, 2.321ns route)
+                                       (68.8% logic, 31.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.69 secs
+ 
+--> 
+
+Total memory usage is 211656 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

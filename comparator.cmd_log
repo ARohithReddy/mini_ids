@@ -1,0 +1,6 @@
+sch2verilog -intstyle ise -family virtex2p   -w "C:/Documents and Settings/student/lab3_1c/comparator.sch" comparator.vf
+sch2verilog -intstyle ise -family virtex2p   -w "C:/Documents and Settings/student/lab3_1c/comparator.sch" comparator.vf
+sch2verilog -intstyle ise -family virtex2p   -w "C:/Documents and Settings/student/lab3_1c/comparator.sch" comparator.vf
+xst -ise "C:/Documents and Settings/student/lab3_1c/lab3_1c.ise" -intstyle ise -ifn "C:/Documents and Settings/student/lab3_1c/comparator.xst" -ofn "C:/Documents and Settings/student/lab3_1c/comparator.syr"
+xst -ise "C:/Documents and Settings/student/lab3_1c/lab3_1c.ise" -intstyle ise -ifn "C:/Documents and Settings/student/lab3_1c/comparator.xst" -ofn "C:/Documents and Settings/student/lab3_1c/comparator.syr"
+xst -ise "C:/Documents and Settings/student/lab3_1c/lab3_1c.ise" -intstyle ise -ifn "C:/Documents and Settings/student/lab3_1c/comparator.xst" -ofn "C:/Documents and Settings/student/lab3_1c/comparator.syr"

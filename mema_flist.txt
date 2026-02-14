@@ -1,0 +1,11 @@
+# Output products list for <mema>
+mema.asy
+mema.ngc
+mema.sym
+mema.v
+mema.veo
+mema.vhd
+mema.vho
+mema.xco
+mema_flist.txt
+mema_xmdf.tcl
